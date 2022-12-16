@@ -1,0 +1,249 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(243, 241, 241);
+  text-shadow: 0.5px 0.5px 10px silver;
+  text-shadow: 0px 1px 4px black;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(90, 173, 129);
+  background-image: url(./Mountaints.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+
+}
+
+.cards {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.div_searchBar {
+  width: 50%;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.div_searchBar input {
+  width: 100%;
+  height: 60%;
+  font-size: larger;
+  color: black;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 2px;
+  text-align: center;
+  text-shadow: none;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.card1 {
+  width: 50%;
+  height: 100%;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* background-image: url(./weatherImg.png); */
+}
+
+.date_time {
+  width: 100%;
+  height: 10%;
+  /* background-color: bisque; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.date_time p {
+  font-size: 18px;
+  border: 2px solid green;
+  border-radius: 12px;
+  padding: 2px 10px;
+  letter-spacing: 2px;
+  /* color: black; */
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.img_data {
+  height: 58px;
+  width: 145px;
+  display: flex;
+  align-items: center;
+}
+
+.temp {
+  width: 100%;
+  height: 20%;
+  /* background-color: azure; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px -1px 4px rgba(206, 89, 55, 0.12);
+  font-size: 45px;
+}
+
+.details {
+  width: 100%;
+  /* background-color: blue; */
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.details h4 {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 0px;
+  padding: 2px 10px;
+  font-size: 23px;
+  /* color: black; */
+  font-weight: 500;
+  word-spacing: 2px;
+}
+
+.temp_humadity {
+  width: 100%;
+  padding: 2px 10px;
+  font-size: 23px;
+  /* color: black; */
+  font-weight: 500;
+  word-spacing: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.temp_humadity .para_hum {
+  padding: 0px 2px;
+}
+
+.moreInfo {
+  width: 35%;
+  height: 20%;
+  background-color: black;
+  border-radius: 10px;
+  margin: 8px 8px;
+  font-size: 16px;
+  align-self: flex-end;
+}
+
+.card2:before {
+  width: 0%;
+  height: 100%;
+  opacity: 0.8;
+  content: '';
+  position: absolute;
+  top: 0;
+}
+
+.card2 {
+  background-image: url(./card2_image.jpg);
+  height: 100%;
+  width: 0%;
+  opacity: 0.8;
+  overflow: hidden;
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: width 1.5s ease-out;
+
+}
+
+.Speed_visibility {
+  width: 100%;
+  height: 20%;
+  /* background-color: yellowgreen; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.Speed_visibility p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0px;
+  padding: 2px 10px;
+  font-size: 23px;
+  /* color: black; */
+  font-weight: 500;
+  word-spacing: 2px;
+}
+
+.card2 p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0px;
+  padding: 2px 10px;
+  font-size: 23px;
+  /* color: black; */
+  font-weight: 500;
+  word-spacing: 2px;
+}
+
+.rise_set {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* background-color: violet; */
+}
+
+.loading {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 8px solid white;
+
+
+}
+
+.rotator {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: solid #a9a8a8;
+  position: relative;
+  bottom: 7px;
+  right: 8px;
+  border-width: 6px 0px 0px 0px;
+  animation: rotation 0.8s infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
